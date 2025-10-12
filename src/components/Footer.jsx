@@ -188,7 +188,6 @@ const Footer = () => {
             </div>
           </div>
 
-M, [10/12/2025 8:25 PM]
 {/* Email va App (QR joyiga qo‘shilgan) */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
