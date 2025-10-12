@@ -107,7 +107,7 @@ const Footer = () => {
             </ul>
           </div>
 
-M, [10/12/2025 8:25 PM]
+
 <div>
             <h3 className="font-semibold mb-3 text-gray-900">Аэропорты</h3>
             <ul className="space-y-2">
