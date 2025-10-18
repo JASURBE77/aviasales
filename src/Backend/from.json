@@ -1,0 +1,104 @@
+{
+  "flights": [
+    {
+      "id": 1,
+      "from": "Toshkent",
+      "to": "Istanbul",
+      "date": "2025-10-20",
+      "time": "10:30",
+      "price": 1250000,
+      "airline": "UzAirways",
+      "image": "https://images.unsplash.com/photo-1608198093002-ad4e005484c5"
+    },
+    {
+      "id": 2,
+      "from": "Toshkent",
+      "to": "Dubai",
+      "date": "2025-10-21",
+      "time": "08:00",
+      "price": 1180000,
+      "airline": "FlyDubai",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b"
+    },
+    {
+      "id": 3,
+      "from": "Toshkent",
+      "to": "Moskva",
+      "date": "2025-10-23",
+      "time": "09:15",
+      "price": 980000,
+      "airline": "Aeroflot",
+      "image": "https://images.unsplash.com/photo-1598008127521-f04e19a39d6c"
+    },
+    {
+      "id": 4,
+      "from": "Samarqand",
+      "to": "Istanbul",
+      "date": "2025-10-24",
+      "time": "13:45",
+      "price": 1150000,
+      "airline": "Turkish Airlines",
+      "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d"
+    },
+    {
+      "id": 5,
+      "from": "Buxoro",
+      "to": "Dubai",
+      "date": "2025-10-25",
+      "time": "17:45",
+      "price": 1240000,
+      "airline": "Emirates",
+      "image": "https://images.unsplash.com/photo-1590073242673-9f5c7c94e023"
+    },
+    {
+      "id": 6,
+      "from": "Farg‘ona",
+      "to": "Istanbul",
+      "date": "2025-10-26",
+      "time": "12:30",
+      "price": 1300000,
+      "airline": "Pegasus Airlines",
+      "image": "https://images.unsplash.com/photo-1503220317375-aaad61436b1b"
+    },
+    {
+      "id": 7,
+      "from": "Toshkent",
+      "to": "Parij",
+      "date": "2025-10-27",
+      "time": "06:00",
+      "price": 1850000,
+      "airline": "Air France",
+      "image": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1"
+    },
+    {
+      "id": 8,
+      "from": "Toshkent",
+      "to": "Seul",
+      "date": "2025-10-28",
+      "time": "07:15",
+      "price": 2100000,
+      "airline": "Korean Air",
+      "image": "https://images.unsplash.com/photo-1551524164-687a55dd1126"
+    },
+    {
+      "id": 9,
+      "from": "Nukus",
+      "to": "Moskva",
+      "date": "2025-10-29",
+      "time": "15:00",
+      "price": 990000,
+      "airline": "Aeroflot",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb"
+    },
+    {
+      "id": 10,
+      "from": "Toshkent",
+      "to": "Istanbul",
+      "date": "2025-10-30",
+      "time": "11:00",
+      "price": 1200000,
+      "airline": "Turkish Airlines",
+      "image": "https://images.unsplash.com/photo-1567593810174-96b25f8b2e4b"
+    }
+  ]
+}
