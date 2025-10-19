@@ -226,7 +226,7 @@ export default function App() {
 
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:3002/flights");
+      const res = await fetch("http://localhost:3000/flights");
       let data = await res.json();
 
       // Filtrlash (katta-kichik harf farqsiz)
@@ -236,7 +236,6 @@ export default function App() {
           f.to.toLowerCase().includes(to.toLowerCase())
       );
 
-      // Sana bo‘yicha filtrlash (agar sana kiritilgan bo‘lsa)
       if (date) {
         const exact = data.filter((f) => f.date === date);
         if (exact.length > 0) data = exact;
@@ -261,8 +260,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#007BFF] text-white font-sans relative">
-      {/* HEADER */}
+    <div className=" bg-[#007BFF] text-white py-5 font-sans relative">
       <header className="flex justify-between items-center px-10 py-4">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/2/20/Aviasales_logo.svg"
@@ -348,3 +346,4 @@ export default function App() {
     </div>
   );
 }
+

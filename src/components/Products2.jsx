@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Products2() {
   const [index, setIndex] = useState(0);
@@ -13,7 +14,7 @@ export default function Products2() {
     "https://images.unsplash.com/photo-1491553895911-0055eca6402d",
     "https://images.unsplash.com/photo-1508057198894-247b23fe5ade",
     "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843",
-    "https://images.unsplash.com/photo-1596464716121-9e3b1b6bfa6e",
+   
   ];
 
   const next = () => setIndex((prev) => (prev + 1) % photos.length);
@@ -112,8 +113,17 @@ export default function Products2() {
                 alt={`Seoul ${i}`}
                 className="w-1/4 h-[180px] object-cover rounded-lg shadow-md mx-1 hover:scale-105 transition-transform duration-500"
               />
-            ))}
+              
+            ))} 
+            
           </div>
+         <center>
+         <Link to={'/find-tickets'}>
+            <button className="mt-4 px-6 py-2 bg-gray-100 rounded-xl font-semibold hover:bg-gray-200 transition">
+              Найти билеты от 1,43 млн UZS
+            </button>
+         </Link>
+         </center>
         </div>
       </div>
     </div>

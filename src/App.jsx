@@ -4,20 +4,14 @@ import FooterNavbar from './components/FooterNavbar'
 import Products from './components/Products'
 import Header from './components/Header'
 import Products2 from './components/Products2'
+import { Outlet } from 'react-router-dom'
 
 const App = () => {
   return (
     <div>
       <Header />
-      <div className='absolute -mt-60 left-0  w-full z-10'>
-        
-      <Products />
-      </div>
-   <div className='mt-150'>
-       <Products2 />
-   </div>
-      <FooterNavbar />
-      <Footer/>
+      <Outlet />
+      <Footer />
     </div>
   )
 }
