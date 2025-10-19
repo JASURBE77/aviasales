@@ -27,7 +27,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-gradient-to-b from-gray-50 to-gray-100 text-gray-700 mt-20 border-t border-gray-200">
-      {/* ==== Популярные направления ==== */}
+     
       <div className="max-w-7xl mx-auto px-6 py-12">
         <h2 className="text-xl font-semibold mb-6 text-gray-900">
           Популярные направления
