@@ -15,20 +15,11 @@ import RouteDetail from "./pages/RouteDetail.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />, // Bitta Router — faqat shu joyda
+    element: <App />,
     children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: "/find-tickets",
-        element: <FindTickets />,
-      },
-      {
-        path: "/routes/:id", // RouteDetail shu URL orqali ochiladi
-        element: <RouteDetail />,
-      },
+      { index: true, element: <Home /> },
+      { path: "find-tickets", element: <FindTickets /> },
+      { path: "about/:id", element: <RouteDetail /> }, // 🔹 id bilan
     ],
   },
 ]);
