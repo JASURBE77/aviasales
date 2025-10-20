@@ -7,6 +7,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import RouteDetail from './Pages/RouteDetail.jsx';
 
 import Home from "./pages/Home.jsx";
 import FindTickets from "./pages/FindTickets.jsx";
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       { path: "about/:id", element: <RouteDetail /> }, // 🔹 id bilan
     ],
   },
+  {
+     path:"/route/:id",
+     element:<RouteDetail/>
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(
