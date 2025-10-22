@@ -53,6 +53,7 @@ import FindTickets from "./pages/FindTickets";
 import RouteDetail from "./pages/RouteDetail";
 import Admin from "./pages/Admin";
 import "./index.css";
+import TicketsMap from "./Pages/TicketsMap";
 
 // Router yaratish
 const router = createBrowserRouter([
@@ -63,6 +64,7 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: "find-tickets", element: <FindTickets /> },
       { path: "about/:id", element: <RouteDetail /> },
+      { path: "/map" ,element: <TicketsMap /> }
     ],
   },
   {

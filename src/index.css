@@ -1,8 +1,28 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@import "leaflet/dist/leaflet.css";
 
 .container{
     max-width: 100%;
     width: 85%;
     margin: 0 auto;
+}
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.leaflet-container {
+  border-radius: 16px;
+}
+
+/* Скролл красивый */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
 }
