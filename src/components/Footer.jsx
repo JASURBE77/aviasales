@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useNavigate } from "react-router-dom"; // 🔹 qo‘shildi
 import {
   FaTelegram,
   FaInstagram,
@@ -10,7 +9,6 @@ import {
   FaOdnoklassniki,
 } from "react-icons/fa";
 import { IoHeart, IoChevronDown } from "react-icons/io5";
-import { IoChevronDown, IoHeart } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { TbAffiliate, TbBook } from "react-icons/tb";
 
@@ -18,8 +16,6 @@ const Footer = () => {
   const [routes, setRoutes] = useState([]);
   const [openCityId, setOpenCityId] = useState(null);
   const navigate = useNavigate();
-  const [openId, setOpenId] = useState(null);
-  const navigate = useNavigate(); // 🔹 navigate funksiyasi
 
   useEffect(() => {
     fetch("http://localhost:3001/popular_routes")
@@ -32,33 +28,23 @@ const Footer = () => {
     navigate(`/route/${city.id}`, { state: { flight, city } });
   };
 
-  // 🔹 Route bosilganda o‘tish funksiyasi
   const handleRouteClick = (id) => {
     navigate(`/about/${id}`);
   };
 
   return (
-    <footer className="bg-gray-50 text-gray-700 mt-20 border-t border-gray-200">
-      {/* ==== Popular routes ==== */}
     <footer className="bg-gradient-to-b from-gray-50 to-gray-100 text-gray-700 mt-20 border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-6 py-12">
         <h2 className="text-xl font-semibold mb-6 text-gray-900">
           Популярные направления
         </h2>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {routes.map((city) => (
             <div key={city.id} className="transition-all duration-300">
-          {routes.map((route) => (
-            <div
-              key={route.id}
-              className="transition-all duration-300"
-            >
               <div
                 onClick={() =>
                   setOpenCityId(openCityId === city.id ? null : city.id)
-                }
-                onClick={() =>
-                  setOpenId(openId === route.id ? null : route.id)
                 }
                 className="flex justify-between items-center bg-gray-100 hover:bg-gray-200 rounded-xl py-3 px-4 cursor-pointer shadow-sm hover:shadow-md transition-all"
               >
@@ -79,8 +65,6 @@ const Footer = () => {
                       key={i}
                       onClick={() => handleFlightClick(flight, city)}
                       className="flex justify-between py-2 border-b border-gray-100 last:border-none cursor-pointer hover:bg-gray-50 rounded-md px-2 transition-all"
-                      onClick={() => handleRouteClick(route.id)} // 🔹 shu joyda o‘tish
-                      className="flex justify-between py-2 border-b border-gray-100 last:border-none cursor-pointer hover:bg-gray-50"
                     >
                       <span className="text-gray-800">{flight.route}</span>
                       <span className="text-gray-600">{flight.price}</span>
@@ -95,7 +79,6 @@ const Footer = () => {
 
       {/* ==== Footer static sections ==== */}
       <div className="border-t border-gray-200">
-            <div className="border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-5 gap-8 text-sm">
           {/* Airlines */}
           <div>
@@ -206,7 +189,9 @@ const Footer = () => {
               <TbBook className="text-2xl text-blue-600" />
               <div>
                 <p className="font-medium text-gray-900">Медиа Yo’lovchi</p>
-                <p className="text-sm text-gray-500">Трэвел-медиа Aviasales.uz</p>
+                <p className="text-sm text-gray-500">
+                  Трэвел-медиа Aviasales.uz
+                </p>
               </div>
             </div>
           </div>
@@ -227,7 +212,9 @@ const Footer = () => {
             </div>
             <div className="bg-gray-100 p-3 rounded-lg flex items-center justify-between">
               <div>
-                <p className="font-medium text-gray-900">В приложении тоже удобно</p>
+                <p className="font-medium text-gray-900">
+                  В приложении тоже удобно
+                </p>
                 <p className="text-xs text-gray-500">
                   Если цена на билет упадёт, сразу пришлём уведомление
                 </p>
@@ -254,8 +241,6 @@ const Footer = () => {
         <span className="text-blue-500 cursor-pointer">куки</span> и аналогичные
         технологии — без них Aviasales просто не сможет нормально работать.
       </div>
-
-      {/* ... pastdagi qolgan kod o‘zgarmaydi ... */}
     </footer>
   );
 };

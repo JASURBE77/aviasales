@@ -210,6 +210,7 @@
 // }
 import React, { useState } from "react";
 import { User, BookOpen, HelpCircle, Globe, Calendar } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function App() {
   const [from, setFrom] = useState("");
@@ -268,9 +269,11 @@ export default function App() {
           className="h-7"
         />
         <nav className="flex items-center gap-6 text-sm font-medium">
+         <Link to={'/login'}>
           <div className="flex items-center gap-1 px-3 py-2 rounded-xl cursor-pointer hover:bg-white hover:text-[#007BFF]">
             <User size={16} /> Profil
           </div>
+         </Link>
           <div className="flex items-center gap-1 px-3 py-2 rounded-xl cursor-pointer hover:bg-white hover:text-[#007BFF]">
             <BookOpen size={16} /> Yo‘lovchi
           </div>
